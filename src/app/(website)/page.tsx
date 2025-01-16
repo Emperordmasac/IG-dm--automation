@@ -27,7 +27,7 @@ export default function Home() {
     {
       name: "Business Plan",
       description: "To cater for all your business needs",
-      price: "$29",
+      price: "$99",
       features: [
         "All Basic Feature",
         "AI-powered Response Generation",
@@ -46,19 +46,17 @@ export default function Home() {
           <div className="container px-4 py-8">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-lg bg-white flex items-center justify-center font-bold">
+                <div className="h-8 w-8 rounded-lg bg-white text-blue-700 flex items-center justify-center font-bold">
                   IG
                 </div>
-                <span className="text-xl font-semibold text-primary-foreground">
-                  Auto
-                </span>
+                <span className="text-xl font-semibold text-[#fff]">Auto</span>
               </div>
               <nav className="hidden space-x-6 text-sm text-blue-200 md:block">
                 <Link href="#features">Features</Link>
                 <Link href="#pricing">Pricing</Link>
                 <Link href="#about">About</Link>
               </nav>
-              <Button className="bg-white text-primary hover:text-white">
+              <Button className="bg-white hover:bg-white font-bold text-blue-700 hover:text-blue-400/">
                 <Link href="/dashboard">Login</Link>
               </Button>
             </div>
@@ -84,7 +82,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-blue-400  hover:bg-blue-900/50 hover:text-white"
+                  className="border-blue-400 bg-transparent border-[2px] hover:bg-blue-900/50 hover:text-white"
                 >
                   Learn More
                 </Button>
@@ -101,7 +99,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container w-full py-12 md:py-24 lg:py-32 bg-background">
+      <section
+        id="pricing"
+        className="container w-full py-12 md:py-24 lg:py-32 bg-background"
+      >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">

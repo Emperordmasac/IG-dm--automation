@@ -1,7 +1,7 @@
 type Props = {}
 
 const DashboardPage = (props: Props) => {
-  // server action to onboard the user
+  // WIP: server action to onboard the user
 
   return <div></div>
 }
