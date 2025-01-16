@@ -1,3 +1,4 @@
+import InfoBar from "@/components/global/info-bar"
 import { Sidebar } from "@/components/global/sidebar"
 
 type LayoutProps = {
